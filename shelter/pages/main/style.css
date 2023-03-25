@@ -1,5 +1,4 @@
 * {
-  border: 1px solid red;
   box-sizing: border-box;
 }
 
@@ -7,36 +6,44 @@
   max-width: 1280px;
   margin: 0 auto;
   display: grid;
-  padding: 30px 40px;
+  padding: 30px 40px 0 40px;
 }
 
 .active, .header-navigation-ul-li-link:active {
   border-bottom: #F1CDB3 3px solid;
   cursor: default;
-  caret-color: red;
+}
+
+.font-georgia, .not-only-content-button, .not-only-content-title, .header-logo-text {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.font-arial, .not-only, .header {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
 }
 
 .header {
   display: grid;
   grid-template-columns: 184px 1fr;
-  font-family: "Arial";
-  font-style: normal;
 }
 .header-wrapper {
-  background-color: rgb(63, 71, 69);
+  background-image: url("../../assets/images/start-screen-background.svg"), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+  background-size: cover;
 }
 .header-logo {
   width: 184px;
   display: inline-grid;
 }
 .header-logo-text {
-  font-family: "Georgia";
-  font-style: normal;
-  font-weight: 400;
   font-size: 32px;
   line-height: 35px;
   color: #F1CDB3;
   margin: 0;
+  letter-spacing: 0.05em;
 }
 .header-logo-subtext {
   font-weight: 400;
@@ -44,6 +51,7 @@
   line-height: 15px;
   color: #FFFFFF;
   margin: 10px 0 0 0;
+  letter-spacing: 0.1em;
 }
 .header-navigation {
   display: inline-grid;
@@ -68,4 +76,41 @@
 .header-navigation-ul-li-link:not(.active):not(.header-navigation-ul-li-link:active):hover {
   color: #FAFAFA;
   cursor: pointer;
+}
+
+.not-only {
+  grid-template-columns: 460px 1fr;
+  padding-top: 60px;
+}
+.not-only-content {
+  width: 460px;
+}
+.not-only-content-title {
+  margin-top: 163px;
+  width: 310px;
+  font-size: 44px;
+  line-height: 57px;
+  color: #FFFFFF;
+}
+.not-only-content-text {
+  font-size: 15px;
+  line-height: 24px;
+  color: #CDCDCD;
+  margin: 42px 0;
+}
+.not-only-content-button {
+  font-size: 17px;
+  line-height: 22px;
+  color: #292929;
+  background-color: #F1CDB3;
+  padding: 15px 45px;
+  border-radius: 100px;
+  letter-spacing: 0.05em;
+}
+.not-only-content-button:hover {
+  background-color: #FDDCC4;
+}
+.not-only-image {
+  justify-content: end;
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
