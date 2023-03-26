@@ -14,7 +14,7 @@
   cursor: default;
 }
 
-.font-georgia, .help-container-elements-icon-title, .help-container-title-text, .friends-container-center-card-text, .friends-container-content-title, .about-container-content-title, .not-only-content-title, .header-logo-text, .button, .friends-container-bottom-btn, .friends-container-center-card-btn, .not-only-content-button {
+.font-georgia, .in-addition-container-content-button-link, .in-addition-container-content-text, .in-addition-container-content-title, .help-container-elements-icon-title, .help-container-title-text, .friends-container-center-card-text, .friends-container-content-title, .about-container-content-title, .not-only-content-title, .header-logo-text, .button, .friends-container-bottom-btn, .friends-container-center-card-btn, .not-only-content-button {
   font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
@@ -275,4 +275,62 @@
   line-height: 23px;
   letter-spacing: 0.05em;
   color: #545454;
+}
+
+.in-addition-wrapper {
+  background-color: #F6F6F6;
+  margin-top: 43px;
+}
+.in-addition-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+.in-addition-container-content {
+  width: 380px;
+  margin-left: 30px;
+}
+.in-addition-container-content-title {
+  font-size: 35px;
+  line-height: 45px;
+  letter-spacing: 0.06em;
+  color: #545454;
+  width: 300px;
+  margin: 0;
+}
+.in-addition-container-content-text {
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: 0.06em;
+  color: #545454;
+  margin: 20px 0;
+}
+.in-addition-container-content-button {
+  display: flex;
+  align-items: center;
+  background: #F1CDB3;
+  border-radius: 9px;
+  border: 1px solid #F1CDB3;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+}
+.in-addition-container-content-button-link {
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  color: #545454;
+  text-decoration: none;
+}
+.in-addition-container-content-button-image {
+  margin-right: 15px;
+}
+.in-addition-container-content-note {
+  font-family: "Arial";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #B2B2B2;
 }/*# sourceMappingURL=style.css.map */
