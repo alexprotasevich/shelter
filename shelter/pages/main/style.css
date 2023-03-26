@@ -14,7 +14,7 @@
   cursor: default;
 }
 
-.font-georgia, .friends-container-center-card-text, .friends-container-content-title, .about-container-content-title, .not-only-content-title, .header-logo-text, .button, .friends-container-bottom-btn, .friends-container-center-card-btn, .not-only-content-button {
+.font-georgia, .help-container-elements-icon-title, .help-container-title-text, .friends-container-center-card-text, .friends-container-content-title, .about-container-content-title, .not-only-content-title, .header-logo-text, .button, .friends-container-bottom-btn, .friends-container-center-card-btn, .not-only-content-button {
   font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
@@ -112,6 +112,7 @@
 }
 .not-only-content-button:hover {
   background-color: #FDDCC4;
+  cursor: pointer;
 }
 .not-only-image {
   justify-content: end;
@@ -197,6 +198,7 @@
 .friends-container-center-btn:hover {
   background-color: #FDDCC4;
   border: solid 2px #FDDCC4;
+  cursor: pointer;
 }
 .friends-container-center-card {
   background-color: #FAFAFA;
@@ -204,6 +206,10 @@
   display: grid;
   justify-items: center;
   padding-bottom: 30px;
+}
+.friends-container-center-card:hover {
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+  cursor: pointer;
 }
 .friends-container-center-card-text {
   text-align: center;
@@ -219,6 +225,7 @@
 .friends-container-center-card-btn:hover {
   background-color: #FDDCC4;
   border: solid 2px #FDDCC4;
+  cursor: pointer;
 }
 .friends-container-bottom {
   display: grid;
@@ -228,4 +235,44 @@
 .friends-container-bottom-btn:hover {
   background-color: #FDDCC4;
   border: solid 2px #FDDCC4;
+  cursor: pointer;
+}
+
+.help-wrapper {
+  background-color: #FFFFFF;
+}
+.help-container-title {
+  width: 308px;
+  margin: 50px auto 60px auto;
+}
+.help-container-title-text {
+  font-size: 35px;
+  line-height: 45px;
+  letter-spacing: 0.05em;
+  color: #545454;
+  margin: 0;
+  text-align: center;
+}
+.help-container-elements {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 80px;
+}
+.help-container-elements-icon {
+  height: 113px;
+  margin-bottom: 55px;
+  display: grid;
+  justify-items: center;
+}
+.help-container-elements-icon:not(:first-child) {
+  margin-left: 120px;
+}
+.help-container-elements-icon-title {
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.05em;
+  color: #545454;
 }/*# sourceMappingURL=style.css.map */
