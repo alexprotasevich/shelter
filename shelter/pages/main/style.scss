@@ -14,11 +14,20 @@ $color-white-200: #FAFAFA;
 $color-grey-300: #292929;
 
 // common styles
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 .fix-size {
     max-width: 1280px;
     margin: 0 auto;
     display: grid;
     padding: 30px 40px 0 40px;
+    scroll-behavior: smooth;
 }
 
 .active {
@@ -69,21 +78,39 @@ $color-grey-300: #292929;
         display: inline-grid;
 
         &-text {
-            @extend .font-georgia;
-            font-size: 32px;
-            line-height: 35px;
-            color: $color-beige;
             margin: 0;
-            letter-spacing: 0.05em;
+
+            &-link {
+                @extend .font-georgia;
+                font-size: 32px;
+                line-height: 35px;
+                color: $color-beige;
+                letter-spacing: 0.05em;
+
+                &:hover {
+                    color: #FAFAFA;
+                    cursor: pointer;
+                    transition: 1s;
+                }
+            }
         }
 
         &-subtext {
-            font-weight: 400;
-            font-size: 13px;
-            line-height: 15px;
-            color: $color-white;
             margin: 10px 0 0 0;
-            letter-spacing: 0.1em;
+
+            &-link {
+                @extend .font-arial;
+                font-size: 13px;
+                line-height: 15px;
+                color: $color-white;
+                letter-spacing: 0.1em;
+
+                &:hover {
+                    color: $color-beige;
+                    cursor: pointer;
+                    transition: 1s;
+                }
+            }
         }
     }
 
@@ -114,6 +141,7 @@ $color-grey-300: #292929;
                     &:not(.active):hover {
                         color: #FAFAFA;
                         cursor: pointer;
+                        transition: 1s;
                     }
                 }
             }
@@ -153,6 +181,7 @@ $color-grey-300: #292929;
             &:hover {
                 background-color: $color-light-beige;
                 cursor: pointer;
+                transition: 1s;
             }
         }
     }
@@ -263,6 +292,7 @@ $color-grey-300: #292929;
                     background-color: $color-light-beige;
                     border: solid 2px $color-light-beige;
                     cursor: pointer;
+                    transition: 1s;
                 }
             }
 
@@ -276,6 +306,8 @@ $color-grey-300: #292929;
                 &:hover {
                     box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
                     cursor: pointer;
+                    background-color: rgba(13, 13, 13, 0.04);
+                    transition: 1s;
                 }
 
                 &-text {
@@ -296,6 +328,7 @@ $color-grey-300: #292929;
                         background-color: $color-light-beige;
                         border: solid 2px $color-light-beige;
                         cursor: pointer;
+                        transition: 1s;
                     }
                 }
             }
@@ -313,6 +346,7 @@ $color-grey-300: #292929;
                     background-color: $color-light-beige;
                     border: solid 2px $color-light-beige;
                     cursor: pointer;
+                    transition: 1s;
                 }
             }
         }
@@ -385,7 +419,7 @@ $color-grey-300: #292929;
         align-items: center;
         justify-content: center;
         padding-top: 80px;
-        padding-bottom: 100px;
+        padding-bottom: 86px;
 
         &-content {
             width: 380px;
@@ -410,14 +444,20 @@ $color-grey-300: #292929;
                 margin: 20px 0;
             }
 
-            &-button {
-                display: flex;
+            &-btn {
+                display: inline-flex;
                 align-items: center;
                 background: #F1CDB3;
                 border-radius: 9px;
                 border: 1px solid #F1CDB3;
                 padding: 10px 15px;
-                margin-bottom: 20px;
+                margin-bottom: 8px;
+
+                &:hover {
+                    background-color: $color-light-beige;
+                    cursor: pointer;
+                    transition: 1s;
+                }
 
                 &-link {
                     @extend .font-georgia;
@@ -442,5 +482,95 @@ $color-grey-300: #292929;
                 color: #B2B2B2;
             }
         }
+    }
+}
+
+//footer
+.footer {
+    &-wrapper {
+        background-image: url("../../assets/images/start-screen-background.svg"), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+        background-size: cover;
+    }
+
+    &-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 130px;
+        padding-top: 24px;;
+        // gap: 160px;
+
+        &-info {
+
+            &-title {
+                @extend .font-georgia;
+                font-size: 35px;
+                line-height: 45px;
+                letter-spacing: 0.06em;
+                color:$color-white;
+                margin-bottom: 44px;
+            }
+
+            &-email {
+                margin-bottom: 42px;
+
+                &-link {
+                    @extend .font-georgia;
+                    font-size: 20px;
+                    line-height: 23px;
+                    letter-spacing: 0.06em;
+                    color: $color-beige;
+                    text-decoration: none;
+                    display: inline-flex;
+                }
+            }
+
+            &-tel {
+
+                &-number {
+                    @extend .font-georgia;
+                    font-size: 20px;
+                    line-height: 23px;
+                    letter-spacing: 0.06em;
+                    color: $color-beige;
+                    text-decoration: none;
+                    display: inline-flex;
+                }
+            }
+
+            &-image {
+                margin-right: 15px;
+            }
+        }
+
+        &-address {
+
+            &-title {
+                @extend .font-georgia;
+                font-size: 35px;
+                line-height: 45px;
+                letter-spacing: 0.06em;
+                color:$color-white;
+                margin-bottom:32px;
+            }
+
+            &-link {
+                margin-bottom: 32px;
+
+                &-url {
+                    @extend .font-georgia;
+                    font-size: 20px;
+                    line-height: 23px;
+                    letter-spacing: 0.06em;
+                    color: $color-beige;
+                    text-decoration: none;
+                    display: inline-flex;
+                }
+            }
+        }
+    }
+
+    &-image {
+        padding-top: 17px;
+        padding-left: 15px;
     }
 }
