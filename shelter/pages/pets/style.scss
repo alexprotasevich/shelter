@@ -185,26 +185,8 @@ html {
 
             &-wrapper {
                 display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 90px;
-            }
-
-            &-btn {
-                width: 52px;
-                height: 52px;
-                border-radius: 100%;
-                border: solid 2px $color-beige;
-                display: grid;
-                align-content: center;
-                justify-content: center;
-                background-color: transparent;
-
-                &:hover {
-                    background-color: $color-light-beige;
-                    border: solid 2px $color-light-beige;
-                    cursor: pointer;
-                    transition: 1s;
-                }
+                grid-template-columns: repeat(4, 1fr);
+                gap: 40px;
             }
 
             &-card {
@@ -246,12 +228,16 @@ html {
         }
 
         &-bottom {
-            display: grid;
-            justify-items: center;
-            margin-top: 56px;
 
-            &-btn {
-                @extend .button;
+            &-btn1 {
+                width: 52px;
+                height: 52px;
+                border-radius: 100%;
+                border: solid 2px $color-beige;
+                display: grid;
+                align-content: center;
+                justify-content: center;
+                background-color: transparent;
 
                 &:hover {
                     background-color: $color-light-beige;
@@ -261,6 +247,22 @@ html {
                 }
             }
         }
+        // &-bottom {
+        //     display: grid;
+        //     justify-items: center;
+        //     margin-top: 56px;
+
+        //     &-btn {
+        //         @extend .button;
+
+        //         &:hover {
+        //             background-color: $color-light-beige;
+        //             border: solid 2px $color-light-beige;
+        //             cursor: pointer;
+        //             transition: 1s;
+        //         }
+        //     }
+        // }
     }
 }
 

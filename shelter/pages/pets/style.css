@@ -23,7 +23,7 @@ html {
   cursor: default;
 }
 
-.font-georgia, .footer-container-address-link-url, .footer-container-address-title, .footer-container-info-tel-number, .footer-container-info-email-link, .footer-container-info-title, .friends-container-center-card-text, .friends-container-content-title, .header-logo-text-link, .button, .friends-container-bottom-btn, .friends-container-center-card-btn {
+.font-georgia, .footer-container-address-link-url, .footer-container-address-title, .footer-container-info-tel-number, .footer-container-info-email-link, .footer-container-info-title, .friends-container-center-card-text, .friends-container-content-title, .header-logo-text-link, .button, .friends-container-center-card-btn {
   font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
@@ -35,7 +35,7 @@ html {
   font-weight: 400;
 }
 
-.button, .friends-container-bottom-btn, .friends-container-center-card-btn {
+.button, .friends-container-center-card-btn {
   font-size: 17px;
   line-height: 22px;
   color: #292929;
@@ -141,24 +141,8 @@ html {
 }
 .friends-container-center-wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 90px;
-}
-.friends-container-center-btn {
-  width: 52px;
-  height: 52px;
-  border-radius: 100%;
-  border: solid 2px #F1CDB3;
-  display: grid;
-  align-content: center;
-  justify-content: center;
-  background-color: transparent;
-}
-.friends-container-center-btn:hover {
-  background-color: #FDDCC4;
-  border: solid 2px #FDDCC4;
-  cursor: pointer;
-  transition: 1s;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
 }
 .friends-container-center-card {
   background-color: #FAFAFA;
@@ -190,12 +174,17 @@ html {
   cursor: pointer;
   transition: 1s;
 }
-.friends-container-bottom {
+.friends-container-bottom-btn1 {
+  width: 52px;
+  height: 52px;
+  border-radius: 100%;
+  border: solid 2px #F1CDB3;
   display: grid;
-  justify-items: center;
-  margin-top: 56px;
+  align-content: center;
+  justify-content: center;
+  background-color: transparent;
 }
-.friends-container-bottom-btn:hover {
+.friends-container-bottom-btn1:hover {
   background-color: #FDDCC4;
   border: solid 2px #FDDCC4;
   cursor: pointer;
