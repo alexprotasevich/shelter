@@ -245,6 +245,11 @@ html {
   text-decoration: none;
   display: inline-flex;
 }
+.footer-container-info-email-link:hover {
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: 1s;
+}
 .footer-container-info-tel-number {
   font-size: 20px;
   line-height: 23px;
@@ -252,6 +257,11 @@ html {
   color: #F1CDB3;
   text-decoration: none;
   display: inline-flex;
+}
+.footer-container-info-tel-number:hover {
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: 1s;
 }
 .footer-container-info-image {
   margin-right: 15px;
@@ -273,6 +283,11 @@ html {
   color: #F1CDB3;
   text-decoration: none;
   display: inline-flex;
+}
+.footer-container-address-link-url:hover {
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: 1s;
 }
 .footer-image {
   padding-top: 17px;
