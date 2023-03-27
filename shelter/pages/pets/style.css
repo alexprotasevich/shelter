@@ -46,6 +46,25 @@ html {
   border: solid 2px #F1CDB3;
 }
 
+.button-round, .friends-container-bottom-double-arrow-right, .friends-container-bottom-single-arrow-right, .friends-container-bottom-number-page, .friends-container-bottom-single-arrow-left, .friends-container-bottom-double-arrow-left {
+  width: 52px;
+  height: 52px;
+  border-radius: 100%;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  background-color: transparent;
+}
+.button-round:disabled, .friends-container-bottom-double-arrow-right:disabled, .friends-container-bottom-single-arrow-right:disabled, .friends-container-bottom-number-page:disabled, .friends-container-bottom-single-arrow-left:disabled, .friends-container-bottom-double-arrow-left:disabled {
+  border: 2px solid #CDCDCD;
+}
+.button-round:hover, .friends-container-bottom-double-arrow-right:hover, .friends-container-bottom-single-arrow-right:hover, .friends-container-bottom-number-page:hover, .friends-container-bottom-single-arrow-left:hover, .friends-container-bottom-double-arrow-left:hover {
+  background-color: #FDDCC4;
+  border: solid 2px #FDDCC4;
+  cursor: pointer;
+  transition: 1s;
+}
+
 .header {
   display: grid;
   grid-template-columns: 184px 1fr;
@@ -174,15 +193,38 @@ html {
   cursor: pointer;
   transition: 1s;
 }
+.friends-container-bottom {
+  display: grid;
+  grid-template-columns: repeat(5, 52px);
+  gap: 20px;
+  justify-content: center;
+  margin-top: 45px;
+}
+.friends-container-bottom-double-arrow-left {
+  border: 2px solid #CDCDCD;
+}
+.friends-container-bottom-single-arrow-left {
+  border: 2px solid #CDCDCD;
+}
+.friends-container-bottom-number-page {
+  border: solid 2px #F1CDB3;
+  background-color: #F1CDB3;
+}
+.friends-container-bottom-single-arrow-right {
+  border: solid 2px #F1CDB3;
+}
+.friends-container-bottom-double-arrow-right {
+  border: solid 2px #F1CDB3;
+}
 .friends-container-bottom-btn1 {
   width: 52px;
   height: 52px;
   border-radius: 100%;
-  border: solid 2px #F1CDB3;
   display: grid;
   align-content: center;
   justify-content: center;
   background-color: transparent;
+  border: solid 2px #F1CDB3;
 }
 .friends-container-bottom-btn1:hover {
   background-color: #FDDCC4;

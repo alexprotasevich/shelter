@@ -61,6 +61,27 @@ html {
     border: solid 2px $color-beige;
 }
 
+.button-round {
+    width: 52px;
+    height: 52px;
+    border-radius: 100%;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    background-color: transparent;
+
+    &:disabled {
+        border: 2px solid $color-light-grey;
+    }
+
+    &:hover {
+        background-color: $color-light-beige;
+        border: solid 2px $color-light-beige;
+        cursor: pointer;
+        transition: 1s;
+    }
+}
+
 .header {
     @extend .font-arial;
     display: grid;
@@ -228,25 +249,59 @@ html {
         }
 
         &-bottom {
-
-            &-btn1 {
-                width: 52px;
-                height: 52px;
-                border-radius: 100%;
-                border: solid 2px $color-beige;
                 display: grid;
-                align-content: center;
+                grid-template-columns: repeat(5, 52px);
+                gap: 20px;
                 justify-content: center;
-                background-color: transparent;
+                margin-top: 45px;
 
-                &:hover {
-                    background-color: $color-light-beige;
-                    border: solid 2px $color-light-beige;
-                    cursor: pointer;
-                    transition: 1s;
+                &-double-arrow-left {
+                    @extend .button-round;
+                    border: 2px solid $color-light-grey;
+                }
+
+                &-single-arrow-left {
+                    @extend .button-round;
+                    border: 2px solid $color-light-grey;
+                }
+
+                &-number-page {
+                    @extend .button-round;
+                    border: solid 2px $color-beige;
+                    background-color: $color-beige;
+                }
+
+                &-single-arrow-right {
+                    @extend .button-round;
+                    border: solid 2px $color-beige;
+                }
+
+                &-double-arrow-right {
+                    @extend .button-round;
+                    border: solid 2px $color-beige;
+                }
+
+                &-btn1 {
+                    width: 52px;
+                    height: 52px;
+                    border-radius: 100%;
+                    display: grid;
+                    align-content: center;
+                    justify-content: center;
+                    background-color: transparent;
+                    border: solid 2px $color-beige;
+
+                    &:hover {
+                        background-color: $color-light-beige;
+                        border: solid 2px $color-light-beige;
+                        cursor: pointer;
+                        transition: 1s;
                 }
             }
         }
+
+
+
         // &-bottom {
         //     display: grid;
         //     justify-items: center;
