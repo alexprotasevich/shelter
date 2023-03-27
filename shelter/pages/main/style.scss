@@ -521,6 +521,12 @@ html {
                     color: $color-beige;
                     text-decoration: none;
                     display: inline-flex;
+
+                    &:hover {
+                        color: $color-white;
+                        cursor: pointer;
+                        transition: 1s;
+                    }
                 }
             }
 
@@ -534,6 +540,12 @@ html {
                     color: $color-beige;
                     text-decoration: none;
                     display: inline-flex;
+
+                    &:hover {
+                        color: $color-white;
+                        cursor: pointer;
+                        transition: 1s;
+                    }
                 }
             }
 
@@ -564,6 +576,12 @@ html {
                     color: $color-beige;
                     text-decoration: none;
                     display: inline-flex;
+
+                    &:hover {
+                        color: $color-white;
+                        cursor: pointer;
+                        transition: 1s;
+                    }
                 }
             }
         }
