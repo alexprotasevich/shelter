@@ -58,7 +58,7 @@ html {
 .button-round:disabled, .friends-container-bottom-double-arrow-right:disabled, .friends-container-bottom-single-arrow-right:disabled, .friends-container-bottom-number-page:disabled, .friends-container-bottom-single-arrow-left:disabled, .friends-container-bottom-double-arrow-left:disabled {
   border: 2px solid #CDCDCD;
 }
-.button-round:hover, .friends-container-bottom-double-arrow-right:hover, .friends-container-bottom-single-arrow-right:hover, .friends-container-bottom-number-page:hover, .friends-container-bottom-single-arrow-left:hover, .friends-container-bottom-double-arrow-left:hover {
+.button-round:not(:disabled):hover, .friends-container-bottom-double-arrow-right:not(:disabled):hover, .friends-container-bottom-single-arrow-right:not(:disabled):hover, .friends-container-bottom-number-page:not(:disabled):hover, .friends-container-bottom-single-arrow-left:not(:disabled):hover, .friends-container-bottom-double-arrow-left:not(:disabled):hover {
   background-color: #FDDCC4;
   border: solid 2px #FDDCC4;
   cursor: pointer;
@@ -215,22 +215,6 @@ html {
 }
 .friends-container-bottom-double-arrow-right {
   border: solid 2px #F1CDB3;
-}
-.friends-container-bottom-btn1 {
-  width: 52px;
-  height: 52px;
-  border-radius: 100%;
-  display: grid;
-  align-content: center;
-  justify-content: center;
-  background-color: transparent;
-  border: solid 2px #F1CDB3;
-}
-.friends-container-bottom-btn1:hover {
-  background-color: #FDDCC4;
-  border: solid 2px #FDDCC4;
-  cursor: pointer;
-  transition: 1s;
 }
 
 .footer-wrapper {
