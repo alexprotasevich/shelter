@@ -380,20 +380,15 @@ html {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: flex-start;
+            justify-content: center;
             align-items: center;
-            margin: 0 80px;
+            margin: 0 88px;
+            column-gap: 120px;
 
             &-icon{
-                height: 113px;
-                margin-bottom: 55px;
+                margin-bottom: 25px;
                 display: grid;
                 justify-items: center;
-
-                &:not(:first-child) {
-                    margin-left:120px;
-                }
-
 
                 &-title {
                     @extend .font-georgia;
@@ -401,6 +396,7 @@ html {
                     line-height: 23px;
                     letter-spacing: 0.05em;
                     color: $color-dark-grey;
+                    margin: 29px 0;
                 }
             }
         }
@@ -411,7 +407,7 @@ html {
 .in-addition {
     &-wrapper {
         background-color: $color-beige-200;
-        margin-top: 43px;
+        margin-top: 48px;
     }
 
     &-container {
@@ -493,13 +489,12 @@ html {
     }
 
     &-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-column-gap: 130px;
-        padding-top: 24px;;
-        // gap: 160px;
+        display: flex;
+        padding-top: 24px;
+        justify-content: space-between;
 
         &-info {
+            width: 300px;
 
             &-title {
                 @extend .font-georgia;
@@ -507,20 +502,21 @@ html {
                 line-height: 45px;
                 letter-spacing: 0.06em;
                 color:$color-white;
-                margin-bottom: 44px;
+                margin-bottom: 43px;
             }
 
             &-email {
-                margin-bottom: 42px;
+                margin-bottom: 38px;
 
                 &-link {
                     @extend .font-georgia;
                     font-size: 20px;
-                    line-height: 23px;
+                    line-height: 24px;
                     letter-spacing: 0.06em;
                     color: $color-beige;
                     text-decoration: none;
                     display: inline-flex;
+                    align-items: center;
 
                     &:hover {
                         color: $color-white;
@@ -540,6 +536,7 @@ html {
                     color: $color-beige;
                     text-decoration: none;
                     display: inline-flex;
+                    align-items: center;
 
                     &:hover {
                         color: $color-white;
@@ -550,11 +547,14 @@ html {
             }
 
             &-image {
-                margin-right: 15px;
+                margin-right: 16px;
             }
         }
 
         &-address {
+            width: 320px;
+            margin-left: 141px;
+            margin-right: 130px;
 
             &-title {
                 @extend .font-georgia;
@@ -566,16 +566,17 @@ html {
             }
 
             &-link {
-                margin-bottom: 32px;
+                margin-bottom: 31px;
 
                 &-url {
                     @extend .font-georgia;
                     font-size: 20px;
-                    line-height: 23px;
+                    line-height: 24px;
                     letter-spacing: 0.06em;
                     color: $color-beige;
                     text-decoration: none;
                     display: inline-flex;
+                    align-items: center;
 
                     &:hover {
                         color: $color-white;

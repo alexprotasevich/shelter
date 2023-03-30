@@ -286,29 +286,28 @@ html {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  margin: 0 80px;
+  margin: 0 88px;
+  -moz-column-gap: 120px;
+       column-gap: 120px;
 }
 .help-container-elements-icon {
-  height: 113px;
-  margin-bottom: 55px;
+  margin-bottom: 25px;
   display: grid;
   justify-items: center;
-}
-.help-container-elements-icon:not(:first-child) {
-  margin-left: 120px;
 }
 .help-container-elements-icon-title {
   font-size: 20px;
   line-height: 23px;
   letter-spacing: 0.05em;
   color: #545454;
+  margin: 29px 0;
 }
 
 .in-addition-wrapper {
   background-color: #F6F6F6;
-  margin-top: 43px;
+  margin-top: 48px;
 }
 .in-addition-container {
   display: flex;
@@ -374,28 +373,31 @@ html {
   background-size: cover;
 }
 .footer-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 130px;
+  display: flex;
   padding-top: 24px;
+  justify-content: space-between;
+}
+.footer-container-info {
+  width: 300px;
 }
 .footer-container-info-title {
   font-size: 35px;
   line-height: 45px;
   letter-spacing: 0.06em;
   color: #FFFFFF;
-  margin-bottom: 44px;
+  margin-bottom: 43px;
 }
 .footer-container-info-email {
-  margin-bottom: 42px;
+  margin-bottom: 38px;
 }
 .footer-container-info-email-link {
   font-size: 20px;
-  line-height: 23px;
+  line-height: 24px;
   letter-spacing: 0.06em;
   color: #F1CDB3;
   text-decoration: none;
   display: inline-flex;
+  align-items: center;
 }
 .footer-container-info-email-link:hover {
   color: #FFFFFF;
@@ -409,6 +411,7 @@ html {
   color: #F1CDB3;
   text-decoration: none;
   display: inline-flex;
+  align-items: center;
 }
 .footer-container-info-tel-number:hover {
   color: #FFFFFF;
@@ -416,7 +419,12 @@ html {
   transition: 1s;
 }
 .footer-container-info-image {
-  margin-right: 15px;
+  margin-right: 16px;
+}
+.footer-container-address {
+  width: 320px;
+  margin-left: 141px;
+  margin-right: 130px;
 }
 .footer-container-address-title {
   font-size: 35px;
@@ -426,15 +434,16 @@ html {
   margin-bottom: 32px;
 }
 .footer-container-address-link {
-  margin-bottom: 32px;
+  margin-bottom: 31px;
 }
 .footer-container-address-link-url {
   font-size: 20px;
-  line-height: 23px;
+  line-height: 24px;
   letter-spacing: 0.06em;
   color: #F1CDB3;
   text-decoration: none;
   display: inline-flex;
+  align-items: center;
 }
 .footer-container-address-link-url:hover {
   color: #FFFFFF;
