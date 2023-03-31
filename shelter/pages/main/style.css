@@ -151,7 +151,7 @@ html {
   grid-template-columns: 1fr 430px;
   gap: 120px;
   padding-top: 80px;
-  padding-right: 215px;
+  padding-right: 200px;
 }
 .about-container-content {
   width: 430px;
@@ -288,7 +288,7 @@ html {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 0 88px;
+  margin: 0 80px;
   -moz-column-gap: 120px;
        column-gap: 120px;
 }
