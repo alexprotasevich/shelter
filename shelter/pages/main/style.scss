@@ -28,7 +28,7 @@ html {
     display: grid;
     padding: 30px 40px 0 40px;
     scroll-behavior: smooth;
-    width: 1280px;
+    // width: 1280px;
 }
 
 .active {
@@ -592,5 +592,60 @@ html {
     &-image {
         padding-top: 17px;
         padding-left: 15px;
+    }
+}
+
+
+
+//media
+
+@media screen and (max-width: 768px) {
+    .fix-size {
+        max-width: 768px;
+        margin: 0 auto;
+        display: flex;
+        padding: 30px 30px 0 30px;
+        scroll-behavior: smooth;
+    }
+
+    .header {
+        &-navigation {
+            margin-left: 40px;
+        }
+    }
+
+    .not-only {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+
+        &-content {
+            &-button {
+                @extend .font-georgia;
+                font-size: 17px;
+                line-height: 22px;
+                color: $color-grey-300;
+                background-color: $color-beige;
+                padding: 13px 44px;
+                border-radius: 100px;
+                letter-spacing: 0.05em;
+                border: solid 2px $color-beige;
+            }
+            &-btm {
+                display: flex;
+                justify-content: center;
+            }
+
+            &-title {
+                margin-top: 30px;
+            }
+        }
+        &-image {
+            margin-top: 100px;
+            img {
+                width: 81.4%;
+            }
+        }
     }
 }

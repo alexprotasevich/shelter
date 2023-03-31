@@ -16,7 +16,6 @@ html {
   display: grid;
   padding: 30px 40px 0 40px;
   scroll-behavior: smooth;
-  width: 1280px;
 }
 
 .active, .header-navigation-ul-li-link:active {
@@ -454,4 +453,46 @@ html {
 .footer-image {
   padding-top: 17px;
   padding-left: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .fix-size {
+    max-width: 768px;
+    margin: 0 auto;
+    display: flex;
+    padding: 30px 30px 0 30px;
+    scroll-behavior: smooth;
+  }
+  .header-navigation {
+    margin-left: 40px;
+  }
+  .not-only {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .not-only-content-button {
+    font-size: 17px;
+    line-height: 22px;
+    color: #292929;
+    background-color: #F1CDB3;
+    padding: 13px 44px;
+    border-radius: 100px;
+    letter-spacing: 0.05em;
+    border: solid 2px #F1CDB3;
+  }
+  .not-only-content-btm {
+    display: flex;
+    justify-content: center;
+  }
+  .not-only-content-title {
+    margin-top: 30px;
+  }
+  .not-only-image {
+    margin-top: 100px;
+  }
+  .not-only-image img {
+    width: 81.4%;
+  }
 }/*# sourceMappingURL=style.css.map */
