@@ -16,6 +16,7 @@ html {
   display: grid;
   padding: 30px 40px 0 40px;
   scroll-behavior: smooth;
+  width: 1280px;
 }
 
 .active, .header-navigation-ul-li-link:active {
