@@ -455,11 +455,11 @@ html {
   padding-left: 15px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .fix-size {
-    max-width: 768px;
+    min-width: 768px;
     margin: 0 auto;
-    display: flex;
+    display: grid;
     padding: 30px 30px 0 30px;
     scroll-behavior: smooth;
   }
@@ -473,14 +473,7 @@ html {
     align-items: center;
   }
   .not-only-content-button {
-    font-size: 17px;
-    line-height: 22px;
-    color: #292929;
-    background-color: #F1CDB3;
     padding: 13px 44px;
-    border-radius: 100px;
-    letter-spacing: 0.05em;
-    border: solid 2px #F1CDB3;
   }
   .not-only-content-btm {
     display: flex;
@@ -494,5 +487,48 @@ html {
   }
   .not-only-image img {
     width: 81.4%;
+  }
+  .about-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 38px;
+    gap: 0;
+    padding-bottom: 100px;
+  }
+  .about-container-content {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .about-container-image {
+    margin-top: 53px;
+  }
+  .friends-container {
+    padding-bottom: 100px;
+  }
+  .friends-container-center {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 52px 1fr 52px;
+    align-items: center;
+    justify-items: center;
+    gap: 0;
+  }
+  .friends-container-center-card-btn {
+    padding: 13px 44px;
+  }
+  .friends-container-center-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  .friends-container-center-card:last-child {
+    display: none;
+  }
+  .friends-container-bottom {
+    margin-top: 59px;
+  }
+  .friends-container-bottom-btn {
+    padding: 14px 45px;
   }
 }/*# sourceMappingURL=style.css.map */

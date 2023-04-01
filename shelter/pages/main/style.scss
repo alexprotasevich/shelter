@@ -598,12 +598,11 @@ html {
 
 
 //media
-
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     .fix-size {
-        max-width: 768px;
+        min-width: 768px;
         margin: 0 auto;
-        display: flex;
+        display: grid;
         padding: 30px 30px 0 30px;
         scroll-behavior: smooth;
     }
@@ -622,15 +621,7 @@ html {
 
         &-content {
             &-button {
-                @extend .font-georgia;
-                font-size: 17px;
-                line-height: 22px;
-                color: $color-grey-300;
-                background-color: $color-beige;
                 padding: 13px 44px;
-                border-radius: 100px;
-                letter-spacing: 0.05em;
-                border: solid 2px $color-beige;
             }
             &-btm {
                 display: flex;
@@ -645,6 +636,58 @@ html {
             margin-top: 100px;
             img {
                 width: 81.4%;
+            }
+        }
+    }
+    .about {
+        &-container {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            margin-top: 38px;
+            gap: 0;
+            padding-bottom: 100px;
+            &-content {
+                margin-left: 0;
+                margin-right: 0;
+            }
+            &-image {
+                margin-top: 53px;
+            }
+        }
+    }
+
+    .friends {
+        &-container {
+            padding-bottom: 100px;
+
+            &-center {
+                margin-top: 60px;
+                display: grid;
+                grid-template-columns: 52px 1fr 52px;
+                align-items: center;
+                justify-items: center;
+                gap: 0;
+
+                &-card {
+                    &-btn {
+                        padding: 13px 44px;
+                    }
+                }
+                &-wrapper {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 40px;
+                }
+                &-card:last-child {
+                    display: none;
+                }
+            }
+            &-bottom {
+                margin-top: 59px;
+                &-btn {
+                    padding: 14px 45px;
+                }
             }
         }
     }
