@@ -647,6 +647,7 @@ html {
             margin-top: 38px;
             gap: 0;
             padding-bottom: 100px;
+
             &-content {
                 margin-left: 0;
                 margin-right: 0;
@@ -690,5 +691,31 @@ html {
                 }
             }
         }
+    }
+
+    .help {
+        &-container {
+            &-elements {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0 38px;
+                column-gap: 0;
+
+                &-icon {
+                    margin-bottom: 28px;
+                    display: grid;
+                    justify-items: center;
+                    width: 170px;
+                }
+            }
+        }
+    }
+
+    .in-addition {
+        display: flex;
+        flex-direction: column-reverse;
     }
 }

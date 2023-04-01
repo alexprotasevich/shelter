@@ -531,4 +531,24 @@ html {
   .friends-container-bottom-btn {
     padding: 14px 45px;
   }
+  .help-container-elements {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 38px;
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
+  .help-container-elements-icon {
+    margin-bottom: 28px;
+    display: grid;
+    justify-items: center;
+    width: 170px;
+  }
+  .in-addition {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }/*# sourceMappingURL=style.css.map */
