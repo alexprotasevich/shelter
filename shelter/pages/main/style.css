@@ -705,33 +705,66 @@ html {
     height: 94%;
   }
   .friends-container {
-    padding-bottom: 100px;
+    padding-bottom: 40px;
+  }
+  .friends-container-content {
+    width: auto;
+    padding-top: 14px;
+  }
+  .friends-container-content-title {
+    font-size: 25px;
+    line-height: 32px;
+    letter-spacing: 0.06em;
   }
   .friends-container-center {
-    margin-top: 60px;
-    display: grid;
-    grid-template-columns: 52px 1fr 52px;
-    align-items: center;
-    justify-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 41px;
     gap: 0;
+  }
+  .friends-container-center .left-button {
+    margin-right: 18px;
+    order: 2;
+  }
+  .friends-container-center .right-button {
+    order: 3;
+  }
+  .friends-container-center-card {
+    margin-bottom: 20px;
   }
   .friends-container-center-card-btn {
     padding: 13px 44px;
     letter-spacing: 0.06em;
   }
   .friends-container-center-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    display: flex;
+    gap: 0;
+    order: 1;
+    width: 100%;
+    justify-content: center;
   }
   .friends-container-center-card:not(:first-child) {
     display: none;
   }
   .friends-container-bottom {
-    margin-top: 59px;
+    margin-top: 42px;
   }
   .friends-container-bottom-btn {
     padding: 14px 45px;
+  }
+  .help-container-title {
+    width: auto;
+    margin: auto;
+  }
+  .help-container-title-text {
+    font-size: 25px;
+    line-height: 32px;
+    letter-spacing: 0.06em;
+    padding: 0 37px;
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 40px;
   }
   .help-container-elements {
     display: flex;
@@ -739,28 +772,67 @@ html {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 0 38px;
     -moz-column-gap: 0;
          column-gap: 0;
+    margin: 0 5px;
   }
   .help-container-elements-icon {
-    margin-bottom: 28px;
+    margin-bottom: 20px;
     display: grid;
     justify-items: center;
-    width: 170px;
+    width: 130px;
+  }
+  .help-container-elements-icon-title {
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: 0.06em;
+    margin: 10px 0;
   }
   .in-addition-wrapper {
-    margin-top: 42px;
+    margin-top: 14px;
   }
   .in-addition-container {
-    padding-top: 79px;
-    padding-bottom: 95px;
+    padding-top: 42px;
+    padding-bottom: 35px;
     display: flex;
     flex-direction: column-reverse;
   }
+  .in-addition-container-image img {
+    width: 87%;
+    margin-left: 21px;
+  }
   .in-addition-container-content {
+    width: 300px;
     margin-left: 0px;
-    margin-bottom: 48px;
+    margin-bottom: 32px;
+  }
+  .in-addition-container-content-text {
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    padding: 0 12px;
+    font-size: 14.2px;
+  }
+  .in-addition-container-content-title {
+    font-size: 25px;
+    line-height: 32px;
+    letter-spacing: 0.06em;
+    padding: 0 40px;
+    text-align: center;
+  }
+  .in-addition-container-content-btn {
+    margin: 0px 8px;
+  }
+  .in-addition-container-content-btn-link {
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: 0.06em;
+    color: #545454;
+    text-decoration: none;
+  }
+  .in-addition-container-content-note {
+    text-align: justify;
+    margin-top: 19px;
+    padding: 0 10px;
   }
   .footer {
     margin-top: 0px;
@@ -773,22 +845,48 @@ html {
     padding-top: 0;
   }
   .footer-container-info {
-    width: 356px;
-    padding-left: 16px;
-    padding-right: 30px;
+    padding: 0px 30px;
   }
   .footer-container-info-title {
     margin-top: 30px;
+    font-size: 25px;
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: 44px;
+  }
+  .footer-container-info-image {
+    margin-right: 19px;
+    margin-left: -3px;
   }
   .footer-container-address {
     margin-left: 0;
     margin-right: 0;
   }
   .footer-container-address-title {
-    margin-top: 30px;
+    padding: 0 10px;
+    margin-top: 35px;
+    font-size: 25px;
+    line-height: 32px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .footer-container-address-link {
+    margin-bottom: 39px;
+  }
+  .footer-container-address-link-url {
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .footer-container-address-link:last-child {
+    margin-bottom: 0;
   }
   .footer-image {
-    padding-left: 0px;
-    padding-top: 26px;
+    padding-top: 0;
+    padding-left: 0;
+  }
+  .footer-image img {
+    width: 85%;
+    margin-left: 23px;
+    margin-top: 41px;
   }
 }/*# sourceMappingURL=style.css.map */
