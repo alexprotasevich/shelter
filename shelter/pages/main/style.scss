@@ -28,7 +28,6 @@ html {
     display: grid;
     padding: 30px 40px 0 40px;
     scroll-behavior: smooth;
-    // width: 1280px;
 }
 
 .active {
@@ -604,7 +603,8 @@ html {
 //media
 @media screen and (min-width: 768px) and (max-width: 1279px) {
     .fix-size {
-        min-width: 768px;
+        // min-width: 768px;
+        width: 100%;
         margin: 0 auto;
         display: grid;
         padding: 30px 30px 0 30px;
@@ -779,7 +779,8 @@ html {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
     .fix-size {
-        min-width: 320px;
+        // min-width: 320px;
+        width: 100%;
         margin: 0 auto;
         display: grid;
         padding: 30px 10px 0 10px;
@@ -891,7 +892,7 @@ html {
                 margin-top: 12px;
                 padding-right: 16px;
                 img {
-                    width: 99%;
+                    width: 104%;
                     height: 94%;
                 }
             }
@@ -985,6 +986,10 @@ html {
                     display: grid;
                     justify-items: center;
                     width: 130px;
+
+                    // img {
+                    //     width: 39%
+                    // }
 
                     &-title {
                         font-size: 15px;
